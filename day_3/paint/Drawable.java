@@ -1,4 +1,4 @@
-package ru.vsu.paint;
+package day_3.paint;
 
 public interface Drawable {
     void draw();

@@ -1,4 +1,4 @@
-package ru.vsu.paint;
+package day_3.paint;
 
 public abstract class Figure implements Drawable {
     protected Point point;
