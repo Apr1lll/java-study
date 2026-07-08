@@ -1,4 +1,4 @@
-public class Main {
+public class TaskMain {
     public static void main(String[] args) {
         MyList<Integer> list = new MyList<>(3);
 
