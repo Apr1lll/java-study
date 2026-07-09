@@ -8,7 +8,7 @@ public class HeroSerializer {
         try (ObjectOutputStream oos = new ObjectOutputStream(
                 new FileOutputStream(filename))) {
             oos.writeObject(hero);
-            System.out.println("✅ Герой сохранён в: " + new File(filename).getAbsolutePath());
+            System.out.println("Герой сохранён в: " + new File(filename).getAbsolutePath());
         }
     }
     

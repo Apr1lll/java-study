@@ -19,9 +19,9 @@ public class FileProcessor {
                     lines.add(line);
                 }
             }
-            System.out.println("📖 Файл найден в resources: " + inputFile);
+            System.out.println("Файл найден в resources: " + inputFile);
         } else {
-            System.out.println("📖 Файл не найден в resources, ищем в файловой системе: " + inputFile);
+            System.out.println("Файл не найден в resources, ищем в файловой системе: " + inputFile);
             lines = Files.readAllLines(Paths.get(inputFile));
         }
         
@@ -33,7 +33,7 @@ public class FileProcessor {
         
         Path outputPath = Paths.get(outputFile);
         Files.write(outputPath, cleanedLines);
-        System.out.println("✅ Файл обработан! Результат в: " + outputPath.toAbsolutePath());
+        System.out.println("Файл обработан! Результат в: " + outputPath.toAbsolutePath());
     }
 
     public static void sortNames(String inputFile, String outputFile) throws IOException {
@@ -42,12 +42,12 @@ public class FileProcessor {
         
         String content;
         if (inputStream != null) {
-            System.out.println("📖 Файл найден в resources: " + inputFile);
+            System.out.println("Файл найден в resources: " + inputFile);
             try (Scanner scanner = new Scanner(inputStream, "UTF-8")) {
                 content = scanner.useDelimiter("\\A").next();
             }
         } else {
-            System.out.println("📖 Файл не найден в resources, ищем в файловой системе: " + inputFile);
+            System.out.println("Файл не найден в resources, ищем в файловой системе: " + inputFile);
             content = Files.readString(Paths.get(inputFile));
         }
         
@@ -61,7 +61,7 @@ public class FileProcessor {
         
         Path outputPath = Paths.get(outputFile);
         Files.write(outputPath, names);
-        System.out.println("✅ Имена отсортированы! Результат в: " + outputPath.toAbsolutePath());
+        System.out.println("Имена отсортированы! Результат в: " + outputPath.toAbsolutePath());
     }
 
     public static List<String> sortNamesList(List<String> names) {
