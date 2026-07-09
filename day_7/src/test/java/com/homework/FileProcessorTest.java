@@ -13,7 +13,6 @@ public class FileProcessorTest {
     
     @BeforeEach
     void setUp() {
-        // Подготовка данных для тестов
         unsortedNames = Arrays.asList("Сергей", "Анна", "Павел", "Иван", "Мария");
         expectedSorted = Arrays.asList("Анна", "Иван", "Мария", "Павел", "Сергей");
     }

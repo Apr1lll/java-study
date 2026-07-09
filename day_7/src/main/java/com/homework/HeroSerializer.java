@@ -1,5 +1,4 @@
-package main.java.com.homework;
-
+package com.homework; 
 import java.io.*;
 
 public class HeroSerializer {
